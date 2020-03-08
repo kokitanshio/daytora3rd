@@ -1,0 +1,24 @@
+.header{
+  background-color: $mainColor;
+  color: $fontSub;
+  &-inner{
+    display: flex;
+    align-items: baseline;
+    font-weight: 900;
+    padding-top: 30px;
+  }
+  &-logo{
+    @include font(30);
+  }
+  &-subtitle{
+    padding: 0 30px;
+  }
+  &-nav{
+    margin-top: 24px;
+    padding-bottom: 20px;
+    ul{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
