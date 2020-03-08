@@ -1,40 +1,167 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>デイトラ3rdブログサイト作成</title>
+  <!--fontawesome-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!--fontawesome-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>たんしおブログ</title>
 </head>
+
 <body>
   <!--headerここから-->
-  <header>
-    <div class="header-inner inner">
-      <div class="header-logo">
-        たんしおブログ
+  <header id="header" class="header">
+    <div class="inner">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href=#>たんしおブログ</a>
+        </div>
+        <div class="header-subtitle">
+          サブタイトルが入りますサブタイトルが入りますサブタイトルが入ります
+        </div>
       </div>
-      <div class="header-subtitle">
-        サブタイトルが入りますサブタイトルが入りますサブタイトルが入ります
-      </div>
-    </div>
+      <!--header-navここから-->
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">カテゴリ名１</a></li>
+          <li><a href="#">カテゴリ名２</a></li>
+          <li><a href="#">カテゴリ名３</a></li>
+        </ul>
+      </nav>
+      <!--header-navここまで-->
+
+    </div><!--inner-->
   </header>
   <!--headerここまで-->
 
-  <!--header-navここから-->
-  <nav class="header-nav">
-    
-  </nav>
-  <!--header-navここまで-->
-
   <!--pickupここから-->
+  <div class="pickup inner">
+    <!--pickpitemここから-->
+    <div class="pickup-item">
+
+    </div>
+    <!--pickpitemここから-->
+  </div>
+  <!--innerここまで-->
   <!--pickupここまで-->
 
   <!--contentここから-->
+  <div class="content inner" id="content">
+    <main id="main" class="main">
+      <!--entries ここから-->
+      <div class="entries">
+        <!--entry-itemここから-->
+        <a href="#">
+          <div class="entry-item">
+            <div class="entry-item-img">
+              <img src="" alt="">
+            </div>
+            <div class="entry-item-body">
+              <h2 class="entry-item-title">
+                タイトルタイトルタイトルタイトルタイトル
+              </h2>
+              <time class="entry-item-time">
+                2020年03月05日
+              </time>
+              <div class="entry-item-text">
+                テキストテキストテキストテキストテキストテキスト...
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--entry-itemここまで-->
+      </div>
+      <!--entries ここまで-->
+      <div class="pagenation">
+
+      </div>
+    </main>
+
+    <!--sidebarここから-->
+    <aside id="side-bar" class="side-bar">
+      <!--プロフィールここから-->
+      <div class="wedgit wedgit_text wedgit_custom_html">
+        <div class="widget-title">プロフィール</div>
+        <div class="wprofile">
+          <div class="wprofile-img">
+            <img src="" alt="">
+          </div>
+          <div class="wprofile-name">たんしお</div>
+          <div class="wprofile-content">
+            テキストテキストテキストテキストテキストテキストテキスト
+          </div>
+          <ul class="wprofile-sns">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div> 
+      </div>
+      <!--プロフィールここから-->
+      <!--Twitterここから-->
+      <div class="wedgit wedgit_twitter">
+        <div class="widget-title">Twitter</div>
+        <!--twitter埋め込み-->
+      </div>
+      <!--Twitterここまで-->
+      <!--検索ここから-->
+      <div class="wedgit wedgit_search">
+        <div class="widget-title">検索</div>
+        <form action="get" class="search-form" action="#">
+          <input type="search" name="s" id="s" class="search-field" placeholder="キーワード">
+          <button type="submit" class="search-submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <!--検索ここまで-->
+      <!--人気記事ここから-->
+      <div class="wedgit wedgit_popular">
+        <div class="widget-title">人気記事</div>
+
+      </div>
+      <!--人気記事ここまで-->
+      <!--アーカイブここから-->
+      <div class="wedgit wedgit_archive">
+        <div class="widget-title">アーカイブ</div>
+        <ul>
+          <li><a href="#">2020年3月</a></li>
+          <li><a href="#">2020年2月</a></li>
+          <li><a href="#">2020年1月</a></li>
+        </ul>
+      </div>
+      <!--アーカイブここまで-->
+      
+    </aside>
+    <!--sidebarここまで-->
+  </div>
   <!--contentここまで-->
 
-  <!--footer-navここから-->
-  <!--footer-navここまで-->
-
+  
   <!--footerここから-->
+  <footer>
+    <div class="footer-menu inner">
+      <div class="footer-logo">
+        <a href="#">たんしおブログ</a>
+      </div>
+
+      <!--footer-navここから-->
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#">たんしおのプロフィール</a></li>
+        </ul>
+      </nav>
+      <!--footer-navここまで-->
+      <div class="copy">
+        Copyright2020 たんしおブログ All rights reserved
+      </div>
+    </div>
+
+  </footer>
   <!--footerここまで-->
 </body>
+
 </html>
