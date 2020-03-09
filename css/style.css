@@ -338,6 +338,27 @@ body {
   margin: 0 auto;
 }
 
+.pickup-item {
+  margin: 0 20px;
+  width: calc(100% / 3 - 40px);
+}
+
+.pickup-item-img {
+  width: 100%;
+}
+
+.pickup-item-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.pickup-item-text {
+  padding: 20px 8px;
+  text-align: left;
+}
+
 .header {
   background-color: #bf783e;
   color: #fff;
@@ -367,4 +388,8 @@ body {
 .header-nav ul {
   display: flex;
   justify-content: space-around;
+}
+
+.pickup {
+  margin: 24px auto;
 }

@@ -7,6 +7,9 @@
   <!--fontawesome-->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!--fontawesome-->
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <!--swiper-->
   <link rel="stylesheet" href="css/style.css">
   <title>たんしおブログ</title>
 </head>
@@ -39,11 +42,59 @@
 
   <!--pickupここから-->
   <div class="pickup inner">
-    <!--pickpitemここから-->
-    <div class="pickup-item">
 
+    <!--swiperここから-->
+    <div class="swiper-container">
+      <!--wrapperここから-->
+      <div class="swiper-wrapper">
+
+        <!--pickpitemここから-->
+        <div class="swiper-slide pickup-item">
+          <a href="#">
+            <div class="pickup-item-img"><img src="img/entry1.png" alt=""></div>
+            <div class="pickup-item-text">
+              <h2>タイトルタイトルタイトル</h2>
+            </div>
+          </a>
+        </div>
+        <!--pickpitemここまで-->
+        <!--pickpitemここから-->
+        <div class="swiper-slide pickup-item">
+          <a href="#">
+            <div class="pickup-item-img"><img src="img/entry1.png" alt=""></div>
+            <div class="pickup-item-text">
+              <h2>タイトルタイトルタイトル</h2>
+            </div>
+          </a>
+        </div>
+        <!--pickpitemここまで-->
+        <!--pickpitemここから-->
+        <div class="swiper-slide pickup-item">
+          <a href="#">
+            <div class="pickup-item-img"><img src="img/entry1.png" alt=""></div>
+            <div class="pickup-item-text">
+              <h2>タイトルタイトルタイトル</h2>
+            </div>
+          </a>
+        </div>
+        <!--pickpitemここまで-->
+        <!--pickpitemここから-->
+        <div class="swiper-slide pickup-item">
+          <a href="#">
+            <div class="pickup-item-img"><img src="img/entry1.png" alt=""></div>
+            <div class="pickup-item-text">
+              <h2>タイトルタイトルタイトル</h2>
+            </div>
+          </a>
+        </div>
+        <!--pickpitemここまで-->
+
+      </div>
+      <!--wrapperここまで-->
+      <div class="swiper-pagination"></div>
     </div>
-    <!--pickpitemここから-->
+    <!--swiperここまで-->
+
   </div>
   <!--innerここまで-->
   <!--pickupここまで-->
@@ -162,6 +213,17 @@
 
   </footer>
   <!--footerここまで-->
+
+  <!--swiper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      pagination: '.swiper-pagination',
+      swiperPreView:3,
+    })
+  </script>
+  <!--swiper-->
 </body>
 
 </html>
