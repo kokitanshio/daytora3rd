@@ -1,0 +1,56 @@
+.widget{
+  margin-bottom: 40px;
+  background-color: $cardColor;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &-title{
+    background-color: $mainColor;
+    color: $fontSub;
+    font-weight: bold;
+    padding: 15px 10px;
+  }
+  &_search{
+    form{
+      position: relative;
+      .search-field{
+        width: 100%;
+        padding: 20px 45px 20px 10px;
+        @include font(18);
+      }
+      .search-submit{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 20px;
+      }
+    }
+  }
+  &_popular{
+
+  }
+  &_archive{
+    ul{
+      padding: 8px 10px;
+      li{
+        padding: 10px 0;
+        border-bottom: 1px dashed $fontText;
+        @include font(18);
+        &:last-child{
+          border-bottom: none;
+        }
+        a:hover{
+          text-decoration: underline;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+.sns-twitter{
+  @include sns(blue);
+}
+.sns-facebook{
+  @include sns(red);
+}

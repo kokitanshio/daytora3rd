@@ -1,0 +1,11 @@
+.content{
+  display: flex;
+  margin: 100px auto;
+  .main{
+    width: 66%;
+  }
+  .side-bar{
+    width: 33%;
+    padding-left: 40px;
+  }
+}

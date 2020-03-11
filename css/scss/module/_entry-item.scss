@@ -1,0 +1,54 @@
+.entry-item{
+  @include card;
+  margin: 0 20px 40px 20px;
+  width: calc(100% / 2 - 40px);
+  position: relative;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  &:hover{
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
+  &-img{
+    width: 100%;
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      vertical-align: bottom;
+      border-radius: 4px 4px 0 0;
+    }
+  }
+  &-tag{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 4px 8px;
+    background-color: $mainColor;
+    opacity: 0.9;
+    border-radius: 50px;
+    color: $fontSub;
+    font-weight: bold;
+    @include font(12);
+  }
+  &-body{
+    padding: 0 20px 20px;
+    .entry-item-time{
+      display: inline-block;
+      @include font(12);
+      margin: 10px 0;
+      color: $fontText;
+      &::before{
+        font-family: "Font Awesome 5 Free";
+        content: '\f2f2';
+      }
+    }
+    .entry-item-title{
+      margin: 10px;
+    }
+    .entry-item-text{
+      margin: 10px;
+      @include font(14);
+      color: $fontText;
+    }
+  }
+}

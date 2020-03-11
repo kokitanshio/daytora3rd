@@ -1,0 +1,34 @@
+footer{
+  background-color: $mainColor;
+  text-align: center;
+  color: $fontSub;
+  .footer-menu{
+    padding: 24px 0 10px;
+    .footer-logo{
+      @include font(20);
+      font-weight: bold;
+    }
+    .footer-list{
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 40px;
+      li+li{
+        &::before{
+          content: '|';
+          padding: 0 20px;
+        }
+      }
+      a:hover{
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+    }
+    .copy{
+      @include font(12);
+      a:hover{
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+    }
+  }
+}
