@@ -1,6 +1,15 @@
 .widget{
   margin-bottom: 40px;
   background-color: $cardColor;
+  @include mq(){
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(sp){
+      width: 100%;
+      max-width: 600px;
+    }
+  }
   &:last-child{
     margin-bottom: 0;
   }
@@ -9,6 +18,7 @@
     color: $fontSub;
     font-weight: bold;
     padding: 15px 10px;
+    @include font(18);
   }
   &_search{
     form{
@@ -28,7 +38,49 @@
     }
   }
   &_popular{
-
+    .wpost-items{
+      margin: 0 10px;
+      padding-bottom: 1px;
+      @include mq(){
+        margin: 0 40px;
+        @include mq(sp){
+          margin: 0;
+        }
+      }
+    }
+    .wpost-item{
+      display: block;
+      position: relative;
+      background-color: transparent;
+      text-decoration: none;
+      color: inherit;
+      margin: 20px 0;
+      @include mq(){
+        margin: 40px 0;
+      }
+      &:hover img{
+        opacity: 0.6;
+        transition: all 0.5s ease 0s;
+      }
+      &:hover .wpost-item-title{
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: all 0.5s ease 0s;
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+      &-title{
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: $fontSub;
+        padding: 10px 10px;
+        font-weight: bold;
+      }
+    }
   }
   &_archive{
     ul{
@@ -37,6 +89,9 @@
         padding: 10px 0;
         border-bottom: 1px dashed $fontText;
         @include font(18);
+        @include mq(sp){
+          @include font(16);
+        }
         &:last-child{
           border-bottom: none;
         }
@@ -49,8 +104,5 @@
   }
 }
 .sns-twitter{
-  @include sns(blue);
-}
-.sns-facebook{
-  @include sns(red);
+  @include sns($twitter);
 }
