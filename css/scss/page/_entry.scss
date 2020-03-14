@@ -1,0 +1,30 @@
+.entry{
+  @include card;
+  padding: 40px;
+  &-header{
+    .entry-title{
+      @include font(30);
+      @include mq(sp){
+        @include font(26);
+      }
+    }
+    .entry-meta{
+      @include font(14);
+      margin: 20px 0 10px;
+      color: $fontText;
+      @include mq(sp){
+        @include font(12);
+      }
+      &-upload{
+        padding-left: 20px;
+      }
+    }
+    .entry-img{
+      width: 100%;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

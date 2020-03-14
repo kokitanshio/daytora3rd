@@ -12,10 +12,16 @@ footer{
       display: flex;
       justify-content: center;
       margin: 20px 0 40px;
+      @include mq(sp){
+        @include font(14);
+      }
       li+li{
         &::before{
           content: '|';
           padding: 0 20px;
+          @include mq(sp){
+            padding: 0 5px;
+          }
         }
       }
       a:hover{
@@ -44,6 +50,13 @@ footer{
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    @include mq(sp){
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      bottom: 30px;
+      right: 25px;
+    }
     &:hover{
       background-color: rgba(0,0,0,0.8);
       transform: scale(1.1);

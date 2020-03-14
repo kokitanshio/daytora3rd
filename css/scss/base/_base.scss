@@ -298,7 +298,4 @@
   body{
     background-color: $backColor;
     color: $fontMain;
-    @include mq(sp){
-      font-size: 14px;
-    }
   }

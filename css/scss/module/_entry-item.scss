@@ -40,13 +40,11 @@
       @include font(12);
       margin: 10px 0;
       color: $fontText;
-      &::before{
-        font-family: "Font Awesome 5 Free";
-        content: '\f2f2';
-      }
     }
     .entry-item-title{
       margin: 10px;
+      @include font(18);
+      color: $fontMain;  
     }
     .entry-item-text{
       margin: 10px;

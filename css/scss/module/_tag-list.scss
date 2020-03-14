@@ -1,0 +1,39 @@
+.entry-tags{
+  @include font(14);
+  @include mq(sp){
+    display: flex;
+    @include font(12);
+  }
+}
+
+.entry-tag{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0;
+  @include mq(sp){
+    flex-direction: column;
+  }
+}
+
+.entry-tag-head{
+  font-weight: bold;
+  @include mq(sp){
+    margin-bottom: 10px;
+  }
+}
+
+.entry-tag-item{
+  margin: 0 5px;
+  @include mq(sp){
+    margin: 5px;
+  }
+  a{
+    @include card;
+    padding: 8px 15px;
+    border: 1px solid $backColor;
+    &:hover{
+      background-color: $backColor;
+    }
+  }
+} 

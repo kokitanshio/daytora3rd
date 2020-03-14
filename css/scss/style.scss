@@ -5,12 +5,15 @@
 @import "mixin/item-card";
 @import "mixin/sns";
 @import "base/base";
-@import "module/h2";
 @import "module/inner";
 @import "module/pickup-item";
 @import "module/entry-item";
 @import "module/widget";
 @import "module/profile";
+@import "module/wpost-item";
+@import "module/entry-body";
+@import "module/tag-list";
+@import "module/related";
 @import "page/header";
 @import "page/pc-nav";
 @import "page/sp-drawer";
@@ -20,3 +23,4 @@
 @import "page/pagenation";
 @import "page/sidebar";
 @import "page/footer";
+@import "page/entry";
