@@ -1,11 +1,16 @@
 .entry-item{
   @include card;
-  margin: 0 20px 40px 20px;
-  width: calc(100% / 2 - 40px);
+  margin: 20px 0;
+  margin-right: 40px;
+  width: calc(100% / 2 - 20px);
   position: relative;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  &:nth-child(even){
+    margin-right: 0;
+  }
   @include mq(sp){
-    width: calc(100% - 40px);
+    width: 100%;
+    margin-right: 0;
   }
   &:hover{
     box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);

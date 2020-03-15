@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--fontawesome-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!--fontawesome-->
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <!--swiper-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>たんしおブログ</title>
+</head>
+
+<body>
+  <!--headerここから-->
+  <header id="header" class="header">
+    <div class="inner">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href=#>たんしおブログ</a>
+        </div>
+        <div class="header-subtitle">
+          サブタイトルが入りますサブタイトルが入りますサブタイトルが入ります
+        </div>
+      </div>
+
+      <!--header-navここから-->
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="menu-item"><a href="#">カテゴリ名１</a></li>
+          <li class="menu-item"><a href="#">カテゴリ名２</a></li>
+          <li class="menu-item"><a href="#">カテゴリ名３</a></li>
+        </ul>
+      </nav>
+      <!--header-navここまで-->
+
+      <!--drawerここから-->
+      <div class="drawer">
+        <div class="drawer-icon" id="drawer-icon">
+          <i id="drawer-open" class="fas fa-chevron-down drawer-open drawer-action"></i>
+          <i id="drawer-close" class="fas fa-chevron-up drawer-close"></i>
+        </div>
+        <div class="drawer-content">
+          <nav class="drawer-nav">
+            <ul class="drawer-list">
+              <li class="drawer-item"><a href="#">カテゴリ名１</a></li>
+              <li class="drawer-item"><a href="#">カテゴリ名２</a></li>
+              <li class="drawer-item"><a href="#">カテゴリ名３</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--drawerここまで-->
+    </div><!--inner-->
+  </header>
+  <!--headerここまで-->
+
+  <!--contentここから-->
+  <div class="content inner" id="content">
+    <!--entryここから-->
+    <article class="entry entry-404">
+      <h1 class="entry-404-title">Not Found ...</h1>
+      <dv class="entry-404-lead">ページが見つかりませんでした</dv>
+      <div class="entry-404-text">お探しのページはすでに存在しないか、URLが間違っている可能性がございます。</div>
+      <div class="entry-404-text">下記キーワード検索より記事をお探しください。</div>
+
+      <!--widgetここから-->
+      <div class="widget-404">
+        <!--検索ここから-->
+        <div class="widget widget_search">
+          <div class="widget-title">キーワード検索</div>
+          <form action="get" class="search-form" action="#">
+            <input type="search" name="s" id="s" class="search-field" placeholder="キーワード">
+            <button type="submit" class="search-submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!--検索ここまで-->
+      </div>
+      <!--widgetここまで-->
+      <div class="btn-404">
+        <a href="#">トップに戻る</a>
+      </div>
+
+    </article>
+    <!--entryここまで-->
+  </div>
+  <!--contentここまで-->
+
+  <!--footerここから-->
+  <footer>
+    <div class="footer-menu inner">
+      <div class="footer-logo">
+        <a href="#">たんしおブログ</a>
+      </div>
+
+      <!--to-topここから-->
+      <div class="to-top" id="to-top">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <!--to-topここまで-->
+
+      <!--footer-navここから-->
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#">たんしおのプロフィール</a></li>
+        </ul>
+      </nav>
+      <!--footer-navここまで-->
+      <div class="copy">
+        Copyright2020 <a href="#">たんしおブログ</a> All rights reserved
+      </div>
+    </div>
+
+  </footer>
+  <!--footerここまで-->
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jq.js"></script>
+  <!--jQuery-->
+  <!--swiper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <!-- <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      pagination: '.swiper-pagination',
+      swiperPreView:'auto',
+    })
+  </script> -->
+  <!--swiper-->
+</body>
+
+</html>

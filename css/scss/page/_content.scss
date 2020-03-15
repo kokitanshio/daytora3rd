@@ -1,6 +1,6 @@
 .content{
   display: flex;
-  margin: 100px auto;
+  margin: 60px auto;
   @include mq(){
     flex-direction: column;
   }

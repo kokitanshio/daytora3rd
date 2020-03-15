@@ -4,6 +4,7 @@
 @import "mixin/font";
 @import "mixin/item-card";
 @import "mixin/sns";
+@import "mixin/btn";
 @import "base/base";
 @import "module/inner";
 @import "module/pickup-item";
@@ -24,3 +25,5 @@
 @import "page/sidebar";
 @import "page/footer";
 @import "page/entry";
+@import "page/archive";
+@import "page/404";

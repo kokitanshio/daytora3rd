@@ -1,8 +1,9 @@
 .entry{
   @include card;
   padding: 40px;
-  &-header{
+  &-head{
     .entry-title{
+      margin-bottom: 20px;
       @include font(30);
       @include mq(sp){
         @include font(26);
@@ -10,7 +11,7 @@
     }
     .entry-meta{
       @include font(14);
-      margin: 20px 0 10px;
+      margin: 10px 0;
       color: $fontText;
       @include mq(sp){
         @include font(12);
